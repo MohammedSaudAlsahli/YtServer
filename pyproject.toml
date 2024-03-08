@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ytserver"
 version = "0.1.0"
-description = ""
+description = "A server for yt-dlp to download videos"
 authors = ["Mohammed Alsahli <mohammed.saud.alsahli@gmail.com>"]
 readme = "README.md"
 
