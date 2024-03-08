@@ -1,7 +1,7 @@
 from ..models import Format, Formats
 
 
-def getting_formats(formats: list[dict]) -> Formats:
+def video_formats(formats: list[dict]) -> Formats:
     """
     Generates the formats dictionary based on the input formats list, and returns the Formats object.
     Parameters:

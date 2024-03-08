@@ -1,10 +1,10 @@
 from yt_dlp import YoutubeDL
 
 from ..models import Video
-from .matching import matching_entries
+from .matching import video_matching
 
 
-def extract_video_info(url: str) -> list[Video]:
+def video_info(url: str) -> list[Video]:
     """
     Function to extract video information from the given URL.
 
@@ -23,7 +23,7 @@ def extract_video_info(url: str) -> list[Video]:
                 url,
                 download=False,
             )
-            video = matching_entries(video_info)
+            video = video_matching(video_info)
         except Exception as exception:
             return {"Error": f"{exception}"}
 

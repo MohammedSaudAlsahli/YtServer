@@ -1,11 +1,11 @@
-from .extract_info import extract_video_info
-from .get_formats import getting_formats
+from .info import video_info
+from .formats import video_formats
 from .instance import video_instance
-from .matching import matching_entries
+from .matching import video_matching
 
 __all__ = [
-    "extract_video_info",
-    "getting_formats",
+    "video_info",
+    "video_formats",
     "video_instance",
-    "matching_entries",
+    "video_matching",
 ]

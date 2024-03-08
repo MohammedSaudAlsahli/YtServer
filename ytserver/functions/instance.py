@@ -1,5 +1,5 @@
 from ..models import Video
-from .get_formats import getting_formats
+from .formats import video_formats
 
 
 def video_instance(video: dict):
@@ -15,7 +15,7 @@ def video_instance(video: dict):
     instance: Video = Video(
         **dict(
             video,
-            formats=getting_formats(
+            formats=video_formats(
                 video.get("formats"),
             ),
         )

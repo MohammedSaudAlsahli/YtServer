@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from ..models import Format
+from .format import Format
 
 
 class Formats(BaseModel):
