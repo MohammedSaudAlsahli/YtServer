@@ -1,5 +1,5 @@
-from ytserver.models.video import Video
-from ytserver.functions.get_formats import get_formats
+from ..models import Video
+from .get_formats import getting_formats
 
 
 def video_instance(video: dict):
@@ -15,7 +15,7 @@ def video_instance(video: dict):
     instance: Video = Video(
         **dict(
             video,
-            formats=get_formats(
+            formats=getting_formats(
                 video.get("formats"),
             ),
         )

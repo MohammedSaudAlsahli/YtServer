@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from ytserver.models.format import Format
+from ..models import Format
 
 
 class Formats(BaseModel):

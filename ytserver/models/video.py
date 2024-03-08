@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from ytserver.models.formats import Formats
+from ..models import Formats
 
 
 class Video(BaseModel):

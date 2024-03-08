@@ -1,7 +1,7 @@
 from yt_dlp import YoutubeDL
 
-from ytserver.models.video import Video
-from ytserver.functions.matching import matching
+from ..models import Video
+from .matching import matching_entries
 
 
 def extract_video_info(url: str) -> list[Video]:
@@ -23,7 +23,7 @@ def extract_video_info(url: str) -> list[Video]:
                 url,
                 download=False,
             )
-            video = matching(video_info)
+            video = matching_entries(video_info)
         except Exception as exception:
             return {"Error": f"{exception}"}
 

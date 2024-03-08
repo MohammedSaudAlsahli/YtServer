@@ -1,8 +1,7 @@
-from ytserver.models.format import Format
-from ytserver.models.formats import Formats
+from ..models import Format, Formats
 
 
-def get_formats(formats: list[dict]) -> Formats:
+def getting_formats(formats: list[dict]) -> Formats:
     """
     Generates the formats dictionary based on the input formats list, and returns the Formats object.
     Parameters:
