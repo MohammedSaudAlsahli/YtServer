@@ -3,6 +3,13 @@ from ytserver.models.formats import Formats
 
 
 def get_formats(formats: list[dict]) -> Formats:
+    """
+    Generates the formats dictionary based on the input formats list, and returns the Formats object.
+    Parameters:
+    - formats: a list of dictionaries representing different formats
+    Returns:
+    - Formats: the Formats object generated from the formats dictionary
+    """
     formats_dict: dict[str, list] = {
         "audio": [],
         "video": [],

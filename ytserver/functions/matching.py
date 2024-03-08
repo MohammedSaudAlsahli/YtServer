@@ -3,6 +3,10 @@ from ytserver.functions.instance import video_instance
 
 
 def matching(info: dict) -> list[Video]:
+    """
+    Function to create a list of Video objects based on the input dictionary.
+    Takes a dictionary 'info' as input and returns a list of Video objects.
+    """
     videos: list[Video] = []
 
     match info.get("entries"):

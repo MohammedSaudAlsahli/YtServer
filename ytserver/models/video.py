@@ -4,7 +4,7 @@ from ytserver.models.formats import Formats
 
 
 class Video(BaseModel):
-    extractor_key: str 
+    extractor_key: str
     display_id: str
     thumbnail: str | None
     title: str
